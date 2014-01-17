@@ -1,0 +1,23 @@
+RSS-lukija
+
+Ohjelmointitehtävässä on tarkoitus saada aikaiseksi Kauppalehden rss-feedeistä 
+yhdistetty sivu, missä uutiset näkyvät aikajärjestyksessä.
+ 
+RSS-feedilista löytyy täältä (valitse näistä 4): 
+http://www.kauppalehti.fi/5/i/tilaukset/rss.jsp 
+Saa toki ottaa muiltakin sivustoilta feedejä jos siltä tuntuu.
+ 
+Toteutuksessa tulee käyttää Spring MVC:tä, projekti pitää pystyä kääntämään 
+Mavenilla/Gradlella ja sovelluksen täytyy käynnistyä "mvn jetty:run? 
+tai Gradlen vastaavalla komennolla.
+ 
+RSS feedit tulee kakuttaa (tai tallentaa muistinvaraiseen tietokantaan), 
+niin että joka kyselyllä ei haeta rss-feedejä uudestaan.
+ 
+Saa tehdä myös single page applikaation jossa backed palauttaa frontille 
+json muodossa datat ja frontti koostetaan javascriptillä.
+ 
+Projektin versionhallinta tulee olla Githubissa 
+(www.github.com<http://www.github.com/>), 
+kun ohjelma on mielestäsi valmis lähetä sähköpostilla projektin github-linkki.
+
