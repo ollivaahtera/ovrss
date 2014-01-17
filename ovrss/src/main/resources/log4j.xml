@@ -12,7 +12,7 @@
 	
 	<!-- Application Loggers -->
 	<logger name="fi.ov.ovrss">
-		<level value="info" />
+		<level value="debug" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
