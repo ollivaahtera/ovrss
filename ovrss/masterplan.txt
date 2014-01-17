@@ -21,3 +21,8 @@ Projektin versionhallinta tulee olla Githubissa
 (www.github.com<http://www.github.com/>), 
 kun ohjelma on mielestäsi valmis lähetä sähköpostilla projektin github-linkki.
 
+
+http://rss.kauppalehti.fi/rss/etusivun_uutiset.jsp
+http://rss.kauppalehti.fi/rss/auto.jsp
+http://rss.kauppalehti.fi/rss/startup.jsp
+http://blogit.kauppalehti.fi/evs/aid/4/recent/50/

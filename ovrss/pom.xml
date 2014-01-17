@@ -123,6 +123,12 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.kenai.nbpwr</groupId>
+			<artifactId>com-sun-syndication-feed</artifactId>
+			<version>1.0-201002241208</version>
+			<type>nbm</type>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

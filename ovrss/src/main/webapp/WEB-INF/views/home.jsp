@@ -2,13 +2,17 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>OvRSS</title>
 </head>
 <body>
 <h1>
-	Hello world!  
+	Rss-syötteet
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+   <c:forEach var="entry" items="${entries}">
+      <p><b><a href="${entry.link}">${entry.title}</a></b><br/>
+      ${entry.pubDate}<br/>
+      ${entry.description}<p/>
+   </c:forEach>
 </body>
 </html>
