@@ -1,0 +1,45 @@
+/* Styles */
+html,body,div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 25px;
+	margin: 10px;
+}
+
+.feedTitle {
+	margin-left: .5em;
+	display: block;
+}
+
+.entry {
+	margin: .5em;
+	padding: .2em;
+	width: 700px;
+	border: 1px solid #888;
+	background-color: #FFE;
+}
+
+.title a {
+	text-decoration: none;
+	font-size: 1.2em;
+	display: block;
+}
+
+.date {
+	font-size: 0.7em;
+	display: block;
+}
+
+.description {
+	margin-top:.3em;
+	display: block;
+	font-size: 1em;
+}
