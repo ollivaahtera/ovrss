@@ -3,6 +3,11 @@ package fi.ov.ovrss.rss;
 import java.util.Date;
 import java.util.TreeSet;
 
+/**
+ * Class for storing RSS feed properties and entries
+ * 
+ * @author olli
+ */
 public class RssFeed {
 	private String url;
 	private String name;

@@ -23,6 +23,10 @@ import fi.ov.ovrss.rss.RssParser;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final String[] urls = {"http://rss.kauppalehti.fi/rss/yritysuutiset.jsp",
+			"http://rss.kauppalehti.fi/rss/auto.jsp",
+			"http://rss.kauppalehti.fi/rss/startup.jsp",
+			"http://blogit.kauppalehti.fi/evs/aid/4/recent/50/"};
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -33,10 +37,6 @@ public class HomeController {
 		
 		RssParser parser = new RssParser();
 
-		String[] urls = {"http://rss.kauppalehti.fi/rss/yritysuutiset.jsp",
-						"http://rss.kauppalehti.fi/rss/auto.jsp",
-						"http://rss.kauppalehti.fi/rss/startup.jsp",
-						"http://blogit.kauppalehti.fi/evs/aid/4/recent/50/"};
 		TreeSet<RssEntry> entries = new TreeSet<RssEntry>();
 
 		List<RssFeed> feeds = new ArrayList<RssFeed>();

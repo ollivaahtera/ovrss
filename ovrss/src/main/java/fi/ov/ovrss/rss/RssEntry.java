@@ -4,6 +4,11 @@ import java.util.Date;
 
 import com.sun.syndication.feed.synd.SyndEntry;
 
+/**
+ * Class for single RSS Entry
+ * 
+ * @author olli
+ */
 public class RssEntry implements Comparable<RssEntry> {
 	private String title;
 	private Date pubDate;
@@ -11,6 +16,11 @@ public class RssEntry implements Comparable<RssEntry> {
 	private String description;
 	private String feedName;
 
+	/**
+	 * Constructor that parses its attributes from SyndEntry object 
+	 *
+	 * @param entry SyndEntry 
+	 */
 	public RssEntry(SyndEntry entry) {
 		this.title = entry.getTitle();
 		this.description = entry.getDescription().getValue();
@@ -49,6 +59,9 @@ public class RssEntry implements Comparable<RssEntry> {
 		this.feedName = feedName;
 	}
 
+	/**
+	 * RssEntries must be comparable by date
+	 */
 	@Override
 	public int compareTo(RssEntry o) {
 		if(o != null && o.getPubDate() != null && this.getPubDate() != null) {
