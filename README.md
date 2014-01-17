@@ -7,8 +7,8 @@ Requirements
 -----
 
 - Java (6/7)
-- Maven2
 - SpringMVC
+- Maven2
 - Maven Jetty plugin
 
 Features
@@ -19,7 +19,7 @@ Application reads four different RSS feeds and caches them. Cached feeds expire 
 Usage
 -----
 
-Start application with command
+After getting all the source files navigate to the project directory (ovrss) and start the application with command
 
     mvn jetty:run
 
