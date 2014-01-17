@@ -1,6 +1,6 @@
 /* Styles */
-html,body,div {
-	margin: 0;
+body {
+	margin: 5px;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -8,29 +8,37 @@ html,body,div {
 	vertical-align: baseline;
 }
 
+.logo {
+	position: absolute;
+	right: .5em;
+}
+
 h1 {
-	font-size: 2em;
-	line-height: 25px;
-	margin: 10px;
+	font-size: 1.8em;
+	line-height: 20px;
+	margin: .5em 0;
 }
 
 .feedTitle {
-	margin-left: .5em;
+	margin-left: .5em 0;
 	display: block;
 }
 
 .entry {
-	margin: .5em;
+	margin: .5em 0;
 	padding: .2em;
-	width: 700px;
 	border: 1px solid #888;
 	background-color: #FFE;
 }
 
 .title a {
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1em;
 	display: block;
+}
+
+.title a:HOVER, .title a:ACTIVE {
+	text-decoration: underline;
 }
 
 .date {
@@ -39,7 +47,7 @@ h1 {
 }
 
 .description {
-	margin-top:.3em;
+	margin-top:.1em;
 	display: block;
 	font-size: 1em;
 }

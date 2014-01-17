@@ -7,9 +7,9 @@
     <title>OvRSS</title>
 </head>
 <body>
-<h1>
-	Your RSS feeds
-</h1>
+	<div class="logo"><a href="http://www.kauppalehti.fi"><img src="http://kuvat.kauppalehti.fi/5/i/img/pohjat/navi/KL_logo_small.png"/></a></div>
+	<h1>Your RSS feeds</h1>
+	<hr/>
 	<c:forEach var="feed" items="${feeds}">
 		<span class="feedTitle">${feed.name} (<a href="${feed.url}">rss</a>)</span>
 	</c:forEach>

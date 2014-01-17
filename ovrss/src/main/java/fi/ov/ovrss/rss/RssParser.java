@@ -20,6 +20,7 @@ public class RssParser {
 	private static final Logger logger = LoggerFactory.getLogger(RssParser.class);
 	private static Map<String, RssFeed> feedMap = new HashMap<String, RssFeed>();
 	private final static long MAX_CACHE_AGE = 60;
+	private final static long MAX_ENTRY_COUNT = 20;
 	
 	public RssFeed getFeed(String url) {
 		RssFeed feed = null;
@@ -70,7 +71,9 @@ public class RssParser {
 				SyndEntry entry = (SyndEntry)o;
 				RssEntry rssEntry = new RssEntry(entry);
 				rssEntry.setFeedName(feed.getTitle());
-				rss.getEntries().add(rssEntry);
+				if (rss.getEntries().size() < MAX_ENTRY_COUNT) {
+					rss.getEntries().add(rssEntry);
+				}
 			}
 		} catch (Exception e) {
 			logger.error(e.getMessage(), e);
