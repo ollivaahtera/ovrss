@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ page session="false" %>
 <html>
 <head>
@@ -6,12 +7,12 @@
 </head>
 <body>
 <h1>
-	Rss-syötteet
+	Your RSS feed
 </h1>
 
    <c:forEach var="entry" items="${entries}">
       <p><b><a href="${entry.link}">${entry.title}</a></b><br/>
-      ${entry.pubDate}<br/>
+      <fmt:formatDate pattern="dd.MM.yyyy - hh:mm:ss" value="${entry.pubDate}" /><br/>
       ${entry.description}<p/>
    </c:forEach>
 </body>
